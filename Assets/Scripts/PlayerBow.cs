@@ -8,6 +8,7 @@ public class PlayerBow : MonoBehaviour
     private Vector2 aimDirection = Vector2.right;
     public float shootCooldown = 0.5f;
     private float shootTimer;
+    public Animator anim;
 
     void Update()
     {
@@ -28,6 +29,11 @@ public class PlayerBow : MonoBehaviour
     }
 
     public void Shoot()
+    {
+        anim.SetTrigger("Shoot");
+    }
+
+    public void OnShootComplete()
     {
         Arrow arrow = Instantiate(arrowPrefab, launchPoint.position, Quaternion.identity).GetComponent<Arrow>();
         arrow.direction = aimDirection;
