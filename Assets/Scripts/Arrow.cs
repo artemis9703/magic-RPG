@@ -43,7 +43,7 @@ public class Arrow : MonoBehaviour
     {
         sr.sprite = buriedSprite;
         rb.linearVelocity = Vector2.zero;
-        rb.isKinematic = true;
+        rb.bodyType = RigidbodyType2D.Kinematic;
         transform.SetParent(target);
     }
 }

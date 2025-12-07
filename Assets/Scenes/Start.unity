@@ -591,7 +591,7 @@ Transform:
   m_GameObject: {fileID: 261982135}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.51, y: 47.46, z: -10}
+  m_LocalPosition: {x: 65.34, y: 53.59, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8320,7 +8320,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 54.24855, y: 47.929996, z: -10}
+  m_LocalPosition: {x: 65.34, y: 53.59, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9032,7 +9032,7 @@ Transform:
   m_GameObject: {fileID: 766113627}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 60.17, y: 52.68, z: 0}
+  m_LocalPosition: {x: 84.99, y: 52.95, z: 0}
   m_LocalScale: {x: -5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11384,6 +11384,7 @@ GameObject:
   - component: {fileID: 1003429309}
   - component: {fileID: 1003429312}
   - component: {fileID: 1003429311}
+  - component: {fileID: 1003429313}
   m_Layer: 0
   m_Name: Lilith
   m_TagString: Untagged
@@ -11398,12 +11399,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003429308}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e03b7dfb1de9f3c4ab666d65d700d3de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolPoints: []
+  patrolPoints:
+  - {x: 52.5, y: 53}
+  - {x: 61, y: 53}
   pauseDuration: 1.5
   speed: 2
 --- !u!4 &1003429310
@@ -11415,7 +11418,7 @@ Transform:
   m_GameObject: {fileID: 1003429308}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 52.43464, y: 53.261097, z: -0.0560149}
+  m_LocalPosition: {x: 52.5, y: 53, z: -0.0560149}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11486,6 +11489,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1003429313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003429308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f88fb998a76b15d4297b291a2a1c6026, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wanderWidth: 7
+  wanderHeight: 7
+  startingPosition: {x: 52.5, y: 53}
+  pauseDuration: 1
+  speed: 2
+  target: {x: 55.4, y: 51}
 --- !u!1 &1003859572
 GameObject:
   m_ObjectHideFlags: 0
@@ -11675,7 +11696,7 @@ Transform:
   m_GameObject: {fileID: 1003859572}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.51, y: 47.46, z: 0}
+  m_LocalPosition: {x: 65.34, y: 53.59, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19868,7 +19889,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: 1123782878151562808, guid: 5d62af3c9e66e87488ed252039ded3db, type: 3}
       - {fileID: -422675199, guid: 5d62af3c9e66e87488ed252039ded3db, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 4, y: -6, z: 0}
