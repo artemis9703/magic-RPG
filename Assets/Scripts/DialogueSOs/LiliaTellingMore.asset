@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speaker: {fileID: 11400000, guid: 29e8a95f31c6c9c41a8d79d83d2d3ee5, type: 2}
-    text: hi
+    text: I saw some skeletons take her through those woods over there.
+  - speaker: {fileID: 11400000, guid: d4f1ef617a7017946b84a7acc5dee87f, type: 2}
+    text: Thanks!
   options: []

@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cave.unity
     guid: 8c3960899ac825a42a24df84eefc674a
+  - enabled: 1
+    path: Assets/Scenes/Finish.unity
+    guid: cc92bffa29ee0da4499f79de02482315
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

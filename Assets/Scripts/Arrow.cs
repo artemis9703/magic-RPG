@@ -1,5 +1,3 @@
-using UnityEditor.Callbacks;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Arrow : MonoBehaviour
@@ -12,7 +10,6 @@ public class Arrow : MonoBehaviour
     public LayerMask obstacleLayer;
     public SpriteRenderer sr;
     public Sprite buriedSprite;
-    public int damage;
 
     void Start()
     {
@@ -31,7 +28,7 @@ public class Arrow : MonoBehaviour
     {
         if ((enemyLayer.value & (1 << collision.gameObject.layer)) > 0)
         {
-            collision.gameObject.GetComponent<EnemyHealth>().ChangeHealth(-damage);
+            collision.gameObject.GetComponent<EnemyHealth>().ChangeHealth(-StatsManager.Instance.damage);
         }
         else if ((obstacleLayer.value & (1 << collision.gameObject.layer)) > 0)
         {
